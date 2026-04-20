@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Travel-IT - Cestovní kancelář</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootswatch/dist/yeti/bootstrap.min.css">
+    <link rel="shortcut icon" href="img/logo_spolecnosti.png" type="image/x-icon">
+    <style>
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Travel-IT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Domů</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Destinace</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="more.html">K moři</a>
+                            <a class="dropdown-item" href="hory.html">Do hor</a>
+                            <a class="dropdown-item" href="mesto.html">Do města</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="o-projektu.html">O projektu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://fastly.picsum.photos/id/1002/4312/2868.jpg?hmac=5LlLE-NY9oMnmIQp7ms6IfdvSUQOzP_O3DPMWmyNxwo"
+                    alt="Hory" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h5>Exotické země</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://fastly.picsum.photos/id/640/2509/1673.jpg?hmac=U0TwrI3U8C-vkfk83iK4VThW99chnRliPL39RWzdTLo"
+                    alt="Hory2" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h5>Nádherné pláže</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://fastly.picsum.photos/id/141/2048/1365.jpg?hmac=xcZmN-VINP95YwmI3AXCTIxfzd61fhaczQmodKQjLbY"
+                    alt="Hory3" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h5>Slunečný Egypt</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://fastly.picsum.photos/id/179/2048/1365.jpg?hmac=GJyDjrvfBfjPfJPqSBd2pX6sjvsGbG10d21blr5bTS8"
+                    alt="Hory4" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h5>Zvuky vln</h5>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="mb-4">Katalog zájezdů</h2>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+            <div class="col">
+                <div class="card border-primary h-100 text-center">
+                    <div class="card-header">Řecko - Santorini</div>
+                    <div class="d-flex justify-content-center pt-3">
+                        <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="rounded-circle border" style="width: 150px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Sledujte nejslavnější západy slunce na světě mezi ikonickými modrými
+                            kopulemi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card border-primary h-100 text-center">
+                    <div class="card-header">Chorvatsko - Makarská</div>
+                    <div class="d-flex justify-content-center pt-3">
+                        <img src="https://images.unsplash.com/photo-1630521553027-c57d0793c4c7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="rounded-circle border" style="width: 150px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Oblíbené oblázkové pláže pod úpatím pohoří Biokovo s tou nejčistší vodou.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card border-primary h-100 text-center">
+                    <div class="card-header">Španělsko - Mallorca</div>
+                    <div class="d-flex justify-content-center pt-3">
+                        <img src="https://images.unsplash.com/photo-1561369412-68038b8bc7b6?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="rounded-circle border" style="width: 150px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Pronajměte si loď a objevujte tyrkysové laguny dostupné jen z moře.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-primary h-100 text-center">
+                    <div class="card-header">Egypt - Hurghada</div>
+                    <div class="d-flex justify-content-center pt-3">
+                        <img src="https://plus.unsplash.com/premium_photo-1724459312010-8be0677d5c87?q=80&w=1112&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="rounded-circle border" style="width: 150px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Šnorchlování mezi korálovými útesy a pozorování pestrobarevných ryb Rudého
+                            moře.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="d-grid gap-2 p-3 mt-4">
+            <button class="btn btn-lg btn-primary" type="button" onclick="document.location='kontakt.html'">Kontaktujte
+                nás</button>
+        </div>
+    </div>
+    <footer class="bg-dark text-white text-center p-4">
+           <p>&copy; 2026 Filip Krajsa | Travel-IT - projekt Webové aplikace</p>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel-IT - Cestovní kancelář</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootswatch/dist/yeti/bootstrap.min.css">
+    <link rel="shortcut icon" href="img/logo_spolecnosti.png" type="image/x-icon">
+    <style>
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Travel-IT</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Domů</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Destinace</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="more.html">K moři</a>
+                <a class="dropdown-item" href="hory.html">Do hor</a>
+                <a class="dropdown-item" href="mesto.html">Do města</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontakt.html">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="o-projektu.html">O projektu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+  </div>
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://fastly.picsum.photos/id/29/4000/2670.jpg?hmac=rCbRAl24FzrSzwlR5tL-Aqzyu5tX_PA95VJtnUXegGU" alt="Hory" class="d-block w-100">
+      <div class="carousel-caption">
+        <h5>Výpravy do hor</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://fastly.picsum.photos/id/385/5000/3333.jpg?hmac=OHEESWvgwObboeW2_H3cihqhLxUY94ljIM31-MokMmY" alt="Moře" class="d-block w-100">
+      <div class="carousel-caption">
+        <h5>Relax u moře</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://fastly.picsum.photos/id/62/2000/1333.jpg?hmac=PbFIn8k0AndjiUwpOJcfHz2h-wPCQi_vJRTJZPdr6kQ" alt="Vodopád" class="d-block w-100">
+      <div class="carousel-caption">
+        <h5>Divoká příroda</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://fastly.picsum.photos/id/122/4147/2756.jpg?hmac=-B_1uAvYufznhjeA9xSSAJjqt07XrVzDWCf5VDNX0pQ" alt="Město" class="d-block w-100">
+      <div class="carousel-caption">
+        <h5>Historická města</h5>
+      </div>
+    </div>
+  </div>
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+   <div class="container my-5">
+    <div class="d-grid gap-2 mb-5">
+        <button class="btn btn-lg btn-primary" type="button" onclick="document.location='hory.html'">Chci na hory!</button>
+        <button class="btn btn-lg btn-primary" type="button" onclick="document.location='more.html'">Chci k moři!</button>
+        <button class="btn btn-lg btn-primary" type="button" onclick="document.location='mesto.html'">Chci do města!</button>
+    </div>
+  
+    <h3>Termíny</h3>
+    <div class="table-responsive">
+        <table class="table table-hover table-striped">
+            <thead class="table-primary">
+                <tr>
+                    <th>Destinace</th>
+                    <th>Termín</th>
+                    <th>Cena</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Split</td>
+                    <td>12. 7. - 19. 7.</td>
+                    <td>8 500 Kč</td>
+                </tr>
+                  <tr>
+                    <td>Londýn</td>
+                    <td>18. 9. - 25. 9.</td>
+                    <td>12 300 Kč</td>
+                </tr>
+                 <tr>
+                    <td>Vídeň</td>
+                    <td>19. 5. - 20. 5.</td>
+                    <td>1350 Kč</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<footer class="bg-dark text-white text-center p-4">
+        <p>&copy; 2026 Filip Krajsa | Travel-IT - projekt Webové aplikace</p>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
